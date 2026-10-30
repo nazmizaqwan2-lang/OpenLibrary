@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Open Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <h2>📚 AI Library</h2>
+    <nav>
+        <a href="#home">🏠 Dashboard</a>
+        <a href="#books">📖 Explore Books</a>
+        <a href="#addBook">➕ Add Book</a>
+        <a href="#recommend">✨ AI Recommendation</a>
+        <a href="#assistant">🤖 AI Assistant</a>
+    </nav>
+    <div class="sidebar-bottom">
+        AI SMART LIBRARY<br>
+        <small>Powered by Open Library</small>
+    </div>
+</aside>
+
+<main class="main-content">
+
+<header id="home">
+    <div>
+        <h1>Smart Digital Library</h1>
+        <p>Discover knowledge with Artificial Intelligence.</p>
+    </div>
+    <div class="profile">👤 Admin</div>
+</header>
+
+<section class="welcome">
+    <div>
+        <span class="tag">AI POWERED PLATFORM</span>
+        <h2>Welcome to the Future of Reading.</h2>
+        <p>Discover, explore and manage your digital books.</p>
+        <a href="#books" class="explore-btn">Explore Books →</a>
+    </div>
+    <div class="welcome-icon">📚</div>
+</section>
+
+<section class="stats">
+    <div class="stat-card">
+        <h3 id="totalBooks">0</h3>
+        <p>My Books</p>
+    </div>
+    <div class="stat-card">
+        <h3>AI</h3>
+        <p>Smart Assistant</p>
+    </div>
+    <div class="stat-card">
+        <h3>24/7</h3>
+        <p>Digital Access</p>
+    </div>
+</section>
+
+<!-- EXPLORE BOOKS -->
+<section id="books" class="section">
+    <h2>🔍 Explore Books</h2>
+    <p>Search books from Open Library.</p>
+
+    <div class="search-box">
+        <input id="searchInput" placeholder="Search books or authors...">
+        <button onclick="searchBooks()">Search</button>
+    </div>
+
+    <div id="results" class="book-grid">
+        <p>Search for your favourite books.</p>
+    </div>
+</section>
+
+<!-- ADD BOOK -->
+<section id="addBook" class="section">
+    <h2>➕ Add New Book</h2>
+    <p>Add your own books to your library collection.</p>
+
+    <div class="add-form">
+        <input id="bookTitle" placeholder="Book Title">
+        <input id="bookAuthor" placeholder="Author Name">
+        <input id="bookCategory" placeholder="Book Category">
+        <input id="bookCover" placeholder="Book Cover Image URL">
+
+        <button onclick="addBook()">+ Add Book</button>
+    </div>
+
+    <h3 class="subheading">My Book Collection</h3>
+    <div id="myBooks" class="book-grid"></div>
+</section>
+
+<!-- RECOMMENDATION -->
+<section id="recommend" class="section">
+    <h2>✨ AI Book Recommendation</h2>
+    <p>Discover books based on your interests.</p>
+
+    <div class="recommend-box">
+        <input id="interest" placeholder="Technology, Science, History...">
+        <button onclick="recommendBooks()">Recommend</button>
+    </div>
+
+    <div id="recommendResults" class="book-grid"></div>
+</section>
+
+<!-- AI ASSISTANT -->
+<section id="assistant" class="section">
+    <h2>🤖 AI Library Assistant</h2>
+    <p>Your virtual library assistant.</p>
+
+    <div class="chat-container">
+        <div id="chatBox" class="chat-box">
+            <div class="bot">
+                Hello! I'm your AI Library Assistant.
+                How can I help you today?
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input id="userMessage" placeholder="Ask me anything about books...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AI Smart Open Library</p>
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
